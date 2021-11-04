@@ -16,7 +16,7 @@ include 'functions.php'; ?>
 <body>
 	<div class="header">
 		<h2>Prisijungimas</h2>
-		<h3>prie kompiuterinės parduotuvės</h3>
+		<h3>prie kompiuterinių žaidimų parduotuvės</h3>
 	</div>
 	<form method="post" action="login.php">
 
