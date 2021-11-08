@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>El pašto tvirtinimas</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="header">
+		<h2>Patvirtinti elektroninio pašto adresą</h2>
+		<h3>Į jūsų el paštą nusiuntėme laišką. Laiške esantį kodą įveskite čia</h3>
+	</div>
+	<form method="post" action="register.php">
+		<div class="input-group">
+			<label>Kodas:</label>
+			<input type="text" name="email_code" >
+		</div>
+		<div class="input-group">
+			<button type="submit" class="btn" name="email_conf_btn">Patvirtinti</button>
+            <a href="menu.html"><b>skip</b></a>
+            <a href="register.html" style="float:right">Sukurti naują paskyrą</a>
+		</div>
+	</form>
+</body>
+</html>
