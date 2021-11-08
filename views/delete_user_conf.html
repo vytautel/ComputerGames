@@ -18,12 +18,17 @@
             </tr>
             <tr>
                 <td>
-                    <a href="edit_profile.html" style="margin:10px">Redaguoti paskyrą</a>
-                    <a href="useredit.php" style="margin:10px">Operacija 2</a>
-                    <a href="uzsakymai.html" style="margin:10px">Užsakymai</a>
+                    <a href="menu.html" style="margin:10px">Pagrindinis</a>
                     <a href="login.html" style="margin:5px;float:right">Atsijungti</a>
                 </td>
             </tr>
         </table>
+		<form method="post" action="delete_user.php">
+            <div><b>Ar tikrai norite pašalinti/blokuoti naudotoją?</b></div>
+            <div class="input-group">
+                <button type="submit" class="btn" name="user_search_btn">Patvirtinti</button>
+                <a href="menu.html"><b>skip</b></a>
+            </div>
+        </form>
     </body>
 </html>

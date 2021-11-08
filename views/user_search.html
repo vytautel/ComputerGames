@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	    <meta name="robots" content="noindex" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Prisijungęs vartotojas: <b>username</b>; Rolė: <b>Klientas/Darbuotojas/Administratorius</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="menu.html" style="margin:10px">Pagrindinis</a>
+                    <a href="login.html" style="margin:5px;float:right">Atsijungti</a>
+                </td>
+            </tr>
+        </table>
+		<form method="post" action="delete_user.php">
+            <div class="input-group"> 
+                <label>Paieška pagal el pašto adresą:</label>
+                <input type="text" name="email" value="sus@gmail.com">
+            </div>
+            <div class="input-group">
+                <button type="submit" class="btn" name="user_search_btn">Ieškoti</button>
+            </div>
+        </form>
+        <table>
+            <tr>
+                <td>Vartotojo vardas</td>
+                <td>El pašto adresas</td>
+            </tr>
+            <tr>
+                <td>Red</td>
+                <td>sus@gmail.com</td>
+                <td><button onclick="window.location.href='delete_user_conf.html'">Šalinti</button></td>
+                <td><button onclick="window.location.href='delete_user_conf.html'">Blokuoti</button></td>
+            </tr>
+        </table>
+    </body>
+</html>
